@@ -30,12 +30,8 @@ access_control:
   default_policy: 'deny'
   rules:
     # Rules applied to everyone
-    - domain: 'ockgowkk0kscws0880g4sw4c.domain.ghostserver.nl'
-      policy: 'bypass'
-    - domain: 'h0gowck8k4oko44c4c4ckk04.domain.ghostserver.nl'
+    - domain: '*.domain.ghostserver.nl'
       policy: 'one_factor'
-    - domain: 'f4o4wk4884scs4o4wo088gw0.domain.ghostserver.nl'
-      policy: 'two_factor'
 
 session:
   # This secret can also be set using the env variables AUTHELIA_SESSION_SECRET_FILE
@@ -44,7 +40,7 @@ session:
   cookies:
     - name: 'authelia_session'
       domain: 'domain.ghostserver.nl'  # Should match whatever your root protected domain is
-      authelia_url: 'https://fw844owsco884wwgkskk4c4w.domain.ghostserver.nl'
+      authelia_url: 'https://authelia.domain.ghostserver.nl
       expiration: '1 hour'
       inactivity: '5 minutes'
 
