@@ -61,7 +61,7 @@ export const Event = ({
 						</Text>
 					</Container>
 					<Text className="text-[#666666] text-[10px] leading-[24px] text-center text-muted">
-						Powered by <Link href="https://www.authelia.com" target="_blank" className="text-[#666666]">Authelia</Link>
+						Powered by <Link href="https://www.authelia.com" target="_blank" className="text-[#666666]">CyberVelvet</Link>
 					</Text>
 				</Body>
 			</Tailwind>
