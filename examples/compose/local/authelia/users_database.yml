@@ -7,11 +7,19 @@
 
 # List of users
 users:
-  <USERNAME>:
+  auth:
     disabled: false
-    displayname: "<DISPLAYNAME>"
-    password: "<PASSWORD>"
-    email: <USERNAME>@example.com
+    displayname: "Auth"
+    password: "$argon2id$v=19$m=65536,t=3,p=4$v/QEJdvPuI/cgXdpVDTZBw$8sOs8jN6hsXnW1BwzcvBa/3exw0njjtW+fCMZHUXGzM"
+    email: auth@example.com
+    groups:
+      - admins
+      - dev
+  anass:
+    disabled: false
+    displayname: "Anass"
+    password: "$argon2id$v=19$m=65536,t=3,p=4$v/QEJdvPuI/cgXdpVDTZBw$8sOs8jN6hsXnW1BwzcvBa/3exw0njjtW+fCMZHUXGzM"
+    email: a.boumadian@cybervelvet.nl
     groups:
       - admins
       - dev
