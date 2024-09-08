@@ -42,9 +42,8 @@ session:
   secret: 'insecure_session_secret'
 
   cookies:
-    - name: 'authelia_session'
-      domain: 'domain.ghostserver.nl'  # Should match whatever your root protected domain is
-      authelia_url: 'https://authelia.example.com'
+    - domain: 'domain.ghostserver.nl'
+      authelia_url: 'https://authelia.domain.ghostserver.nl'
       expiration: '1 hour'
       inactivity: '5 minutes'
 
