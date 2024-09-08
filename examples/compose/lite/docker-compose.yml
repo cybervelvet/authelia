@@ -22,6 +22,8 @@ services:
       - 'traefik.http.middlewares.authelia.forwardauth.authResponseHeaders=Remote-User,Remote-Groups,Remote-Name,Remote-Email'  # yamllint disable-line rule:line-length
     expose:
       - 9091
+    ports:
+      - '127.0.0.1:9091:9091'
     restart: unless-stopped
     healthcheck:
       ## In production the healthcheck section should be commented.
