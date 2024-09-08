@@ -1,26 +1,17 @@
----
-###############################################################
-#                         Users Database                      #
-###############################################################
-
-# This file can be used if you do not have an LDAP set up.
-
-# List of users
 users:
-  auth:
-    disabled: false
-    displayname: "Auth"
-    password: "$argon2id$v=19$m=65536,t=3,p=4$v/QEJdvPuI/cgXdpVDTZBw$8sOs8jN6hsXnW1BwzcvBa/3exw0njjtW+fCMZHUXGzM"
-    email: auth@example.com
-    groups:
-      - admins
-      - dev
-  anass:
-    disabled: false
-    displayname: "Anass"
-    password: "$argon2id$v=19$m=65536,t=3,p=4$v/QEJdvPuI/cgXdpVDTZBw$8sOs8jN6hsXnW1BwzcvBa/3exw0njjtW+fCMZHUXGzM"
-    email: a.boumadian@cybervelvet.nl
-    groups:
-      - admins
-      - dev
-...
+    anass:
+        password: $argon2id$v=19$m=65536,t=3,p=4$jJ5mDvAnBll+kF5NpV09zA$mvqvMr6lAo8Yy6bjUStZMUxZLtzmk73HREfPQdY59iA
+        displayname: Anass
+        email: a.boumadian@cybervelvet.nl
+        groups:
+            - admins
+            - dev
+        disabled: false
+    auth:
+        password: $argon2id$v=19$m=65536,t=3,p=4$v/QEJdvPuI/cgXdpVDTZBw$8sOs8jN6hsXnW1BwzcvBa/3exw0njjtW+fCMZHUXGzM
+        displayname: Auth
+        email: auth@example.com
+        groups:
+            - admins
+            - dev
+        disabled: false
